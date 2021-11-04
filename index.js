@@ -20,7 +20,6 @@ sign_up_form.addEventListener('submit', function(e){
     let pass = this.querySelector('input[name="pass"]').value;
     let cpass = this.querySelector('input[name="cpass"]').value;
     
- 
 
     if(Validate.emphty(name) || Validate.emphty(email) || Validate.emphty(cell) || Validate.emphty(username) || Validate.emphty(pass)){
 
@@ -36,7 +35,7 @@ sign_up_form.addEventListener('submit', function(e){
 
     }else if(Validate.passConfirm(pass,cpass) == false){
 
-        msg.innerHTML = Validate.setMsg('Password does not match');
+        msg.innerHTML = Validate.setmsg('Password does not match');
         
     }else{
 
